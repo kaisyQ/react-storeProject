@@ -6,7 +6,7 @@ import styles from './Modal.module.css'
 
 interface ModalData {
     title : string,
-    description: string,
+    description?: string,
     btnTitle: string
     inputsData: InputProps[]
 }

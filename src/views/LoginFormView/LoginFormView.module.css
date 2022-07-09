@@ -1,0 +1,6 @@
+.loginNav {
+    width: 200px;
+    margin: 50px auto 30px auto;
+    display: flex;
+    justify-content: space-between;
+}
