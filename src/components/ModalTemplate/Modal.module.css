@@ -1,0 +1,18 @@
+.modalContainer {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.inputItem {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.inputTitle {
+    margin-right: 30px;
+}
+
+.inputField {
+    margin: 20px 0 20px 0;   
+}
