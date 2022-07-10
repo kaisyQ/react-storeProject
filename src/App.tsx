@@ -5,6 +5,7 @@ import LoginFormView from './views/LoginFormView/LoginFormView'
 import AboutView from './views/AboutView/AboutView'
 import { Routes, Route } from "react-router-dom"
 import Header from './components/Header/Header'
+import StoreItemView from './views/StoreItemsView.tsx/StoreItemsView'
 
 function App() {
   return (
@@ -13,9 +14,11 @@ function App() {
       <Routes>
         <Route path='/' element={<AboutView />}/>
         <Route path='/login' element={<LoginFormView />}/>
+        <Route path='/store' element={<StoreItemView />}/>
       </Routes>
     </div>
   );
 }
 
 export default App;
+
