@@ -1,18 +1,20 @@
 import React from "react"
 import { Navbar, Nav, Container } from "react-bootstrap"
+import { NavLink } from "react-router-dom"
+
 
 const Header = () => {
     return <Navbar bg="primary" variant="dark">
         <Container>
-            <Navbar.Brand href="#home">Store</Navbar.Brand>
+            <Navbar.Brand href="/">Store</Navbar.Brand>
             <Nav className="me-auto">
-                <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#features">Features</Nav.Link>
-                <Nav.Link href="#pricing">Pricing</Nav.Link>
+                <NavLink className='nav-link' to="/">Home</NavLink>
+                <NavLink className='nav-link' to="/features">Features</NavLink>
+                <NavLink className='nav-link' to="/pricing">Pricing</NavLink>
             </Nav>
             <Nav>
-                <Nav.Link href="#about">About</Nav.Link>
-                <Nav.Link href="#login">Log in</Nav.Link>
+                <NavLink className='nav-link' to="/about">About</NavLink>
+                <NavLink className='nav-link' to="/login">Log in</NavLink>
             </Nav>
         </Container>
   </Navbar>

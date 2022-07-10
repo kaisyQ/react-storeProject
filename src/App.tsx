@@ -1,12 +1,19 @@
-import React from 'react';
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from 'react'
+import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import LoginFormView from './views/LoginFormView/LoginFormView'
+import AboutView from './views/AboutView/AboutView'
+import { Routes, Route } from "react-router-dom"
+import Header from './components/Header/Header'
 
-import LoginFormView from './views/LoginFormView/LoginFormView';
 function App() {
   return (
     <div className="App">
-      <LoginFormView />
+      <Header />
+      <Routes>
+        <Route path='/' element={<AboutView />}/>
+        <Route path='/login' element={<LoginFormView />}/>
+      </Routes>
     </div>
   );
 }
