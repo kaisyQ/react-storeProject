@@ -1,5 +1,5 @@
 import React from "react"
-import createModal from "../hoc/ModalTemplate/ModalTemplate"
+import createModal from "../../hoc/ModalTemplate/ModalTemplate"
 
 const Registration = createModal({
     title: 'Registration-form',
