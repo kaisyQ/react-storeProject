@@ -1,17 +1,11 @@
 import React from "react"
 import Error from "../../components/Error/Error"
+import StoreItemsBoard from '../../components/StoreItemsBoard/StoreItemsBoard'
+import { StoreItemPropsTemplate } from '../../types/storeItemsTypes'
 
-interface StoreItem {
-    title?: string,
-    imgURL?: string
+const StoreItemsView = (props: StoreItemPropsTemplate) => {
+    if (!props.storeItems) return <Error errorTitle="we can`t take store data"/>
+    return <StoreItemsBoard {...props}/>
 }
 
-const StoreItemView = () => {
-    return <Error errorTitle="we can`t take store data"/>
-
-    return <div>
-
-    </div>
-}
-
-export default StoreItemView
+export default StoreItemsView
